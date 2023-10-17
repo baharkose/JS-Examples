@@ -90,3 +90,19 @@ console.log(newList);
 
 let isimListesi = ["Ali", "Ayşe", "Mehmet", "Fatma", "Hasan", "Zeynep", "Emre", "Selin", "Mustafa", "Elif", "Baran", "Gamze", "Eren", "Dilara", "Burak", "Pınar", "İsmail", "Sibel", "Murat", "Gülşah", "Ahmet", "Hatice", "Kemal", "Sevgi", "Yusuf", "Aslı", "Can", "Zehra", "Onur", "Ebru", "Serkan", "Nazlı", "Cemal", "Gonca", "Ercan", "Esra", "Hakan", "Nur"];
 
+let spliced = isimListesi.splice(0,10);
+let spliced2 = isimListesi.splice(-10);
+console.log(isimListesi);
+
+// console.log(isimListesi);
+
+const letters = ['a', 'b', 'c', 'd', 'e'];
+letters[0]; // => 'a'
+letters[2]; // => 'c'
+console.log(letters[-1]);
+
+
+let myArray = [1, 2, 3, 4, 5];
+console.log(myArray[-1]); // Son eleman (5)
+console.log(myArray[-2]); // Sondan bir önceki eleman (4)
+
