@@ -106,3 +106,62 @@ let myArray = [1, 2, 3, 4, 5];
 console.log(myArray[-1]); // Son eleman (5)
 console.log(myArray[-2]); // Sondan bir önceki eleman (4)
 
+
+console.clear();
+
+// function areAnagrams(str1, str2) {
+//     const word1 = str1.replace(/[^a-zA-Z]/gi, "").toLowerCase().split("").sort().join("")
+//     const word2 = str2.replace(/[^a-zA-Z]/gi, "").toLowerCase().split("").sort().join("")
+//     return word1 === word2;
+//   }
+//   const word1 = prompt("Enter a word")
+//   const word2 = prompt("Enter an another word")
+//   const result = areAnagrams(word1,word2)
+//   console.log(result)
+
+//   console.clear();
+
+//   function removeDuplicates(list){
+
+//     const newList = [];
+//     for (let i = 0; i < list.length; i++){
+//         // indexof 0 ve 1 olarak çalışır
+//         if(newList.indexOf(list[i]) !== -1)
+//         newList.push(list[i]);
+//         return newList;
+//     }
+//   }
+
+//   const duplicateList = [1,2,3,4,5,6,7,8];
+//   const newList = removeDuplicates(duplicateList)
+//   console.log(newList);
+
+function removeDuplicates(liste) {
+    const yeniListe = [];
+    for (let i = 0; i < liste.length; i++) {
+      if ( yeniListe.indexOf(liste[i]) === -1) {
+        yeniListe.push(liste[i]);
+      }
+    }
+    return yeniListe
+  }
+  const arrayWithDuplicates = [1, 2, 2, 3, 4, 4, 5];
+  const yeniListe = removeDuplicates(arrayWithDuplicates);
+  console.log(yeniListe);
+
+
+  function findIntersection(array1, array2) {
+    const kesisim = [];
+    for (let i of array1) {
+      for (let j of array2) {
+        if (i === j) {
+          kesisim.push(i);
+        }
+      }
+    }
+    return kesisim;
+  }
+  const array1 = [1, 2, 3, 4, 5];
+  const array2 = [3, 4, 5, 6, 7];
+  const result = findIntersection(array1, array2);
+  console.log(result);
