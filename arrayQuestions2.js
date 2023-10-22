@@ -44,11 +44,12 @@ let removed = retrieveRemoved(numbers2, limiter);console.log("the removed elemen
 console.log(numbers2);
 
 
-
-
-
-
 // How to filter values from an array for which the comparator function does not return true in JavaScript ?
+
+const list = [1,2,3,4,5,6,7,8,9,10,55,12,44,452,69,78,55,11];
+
+let getFalseReturn = list.filter((item) => !(item < 6) && item)
+console.log(getFalseReturn);
 
 
 
