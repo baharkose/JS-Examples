@@ -11,6 +11,7 @@ const findStudent = (name) => {
 }
 
 //1 write to codes finding the repeated letter given a name
+
 let isim = "bahar"
 
 let isimArray = isim.split("");
@@ -31,6 +32,8 @@ isimArray.forEach((element,index1) => {
 });
 
 console.log(tekrarEden);
+
+
 
 
 
