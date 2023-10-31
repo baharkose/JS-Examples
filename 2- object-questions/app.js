@@ -1,6 +1,5 @@
 // Sample products data
 // products
-​
 var allProducts = [
   {
     id: 1,
@@ -75,34 +74,27 @@ var allProducts = [
   },
 ]
 console.log(allProducts);
-​
 // <--------------------  Delete product  ------------------------->
 // 1 - Ürün listesinden id'si verilen ürünü silen ve geri kalan ürün listesini dönen fonksiyonu yazınız.(deleteProduct(id))
-​
-​
-​
+
+function deleteProduct(id) {
+    console.log(id);
+
+}
+
 // <--------------------  Delete product  ------------------------->
-​
-​
 // <--------------------  Create  product  ------------------------->
 // 2 - Ürün listesine yeni bir ürün ekleyen ve yeni listeyi dönen fonksiyonu yazınız. (createNewProduct({title, description, image}))
-​
-​
-​
-​
+
 // <--------------------  Create  product  ------------------------->
-​
+
 // <--------------------  Edit  product  ------------------------->
 // 3 - Ürün listesindeki id si belirtlen bir ürünün başlığını ve açıklamasını güncelleyen ve yeni listeyi dönen fonksiyonu yazınız. (editProduct({id, title, description}))
-​
-​
-​
+
 // <--------------------  Edit  product  ------------------------->
-​
+
 // <--------------------  filter  product  ------------------------->
 // 4 - Ürün listesindeki ürünleri gönderilen arama kelimesine göre, ürünün adı, açıklaması ve markasında arayıp eşleşen tüm ürünlerin listesini dönen fonksiyonu yazınız. (filterProducts(query)) büyük-küçük harf duyarlılığı olmamalıdır.
-​
-​
-​
-​
+
+
 // <--------------------  filter  product  ------------------------->

@@ -142,8 +142,8 @@ findVowels("The quick brown fox")
 
 
 
-// let result3 = string3.split("").reduce((count, element) => Number((element.includes(vowels))),0)
-// console.log(result3);
+let result3 = string3.split("").reduce((count, element) => Number((element.includes(vowels))),0)
+console.log(result3);
 
 //8- Write a JavaScript function that accepts a number as a parameter and checks whether it is prime or not.
 
