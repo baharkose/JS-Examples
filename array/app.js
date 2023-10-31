@@ -146,6 +146,22 @@ findVowels("The quick brown fox")
 // console.log(result3);
 
 //8- Write a JavaScript function that accepts a number as a parameter and checks whether it is prime or not.
+
+
+function prime(number) {
+
+    if (number <= 1) return false;
+    if (number <= 3) return true;
+    if (number % 2 === 0 || number % 3 === 0) return false;
+
+    for (let i = 5; i * i <= number; i += 6) {
+         if (number % i === 0 || number % (i + 2) === 0) return false;
+    }
+
+  return true;
+}
+
+console.log(prime(12));
 // Note : A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself.
 
 // 9. Write a JavaScript function that accepts an argument and returns the type.
